@@ -6,7 +6,26 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<script type="text/javascript">
+
+	<img src="1.jpg">
+	<img src="2.jpg">
+	<img src="3.jpg">
+	<img src="4.jpg">
+	<img src="5.jpg">
+	<img src="6.jpg">
+	<img src="7.jpg">
+	<img src="8.jpg">
+	
+	<img class="lazy" data-src="1.jpg">
+	<img class="lazy" data-src="2.jpg">
+	<img class="lazy" data-src="3.jpg">
+	<img class="lazy" data-src="4.jpg">
+	<img class="lazy" data-src="5.jpg">
+	<img class="lazy" data-src="6.jpg">
+	<img class="lazy" data-src="7.jpg">
+	<img class="lazy" data-src="8.jpg">
+	
+		<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages = document.querySelectorAll("img.lazy");    
   var lazyloadThrottleTimeout;
@@ -37,23 +56,6 @@
   window.addEventListener("orientationChange", lazyload);
 });
 	</script>
-	<img src="1.jpg">
-	<img src="2.jpg">
-	<img src="3.jpg">
-	<img src="4.jpg">
-	<img src="5.jpg">
-	<img src="6.jpg">
-	<img src="7.jpg">
-	<img src="8.jpg">
-	
-	<img class="lazy" data-src="1.jpg">
-	<img class="lazy" data-src="2.jpg">
-	<img class="lazy" data-src="3.jpg">
-	<img class="lazy" data-src="4.jpg">
-	<img class="lazy" data-src="5.jpg">
-	<img class="lazy" data-src="6.jpg">
-	<img class="lazy" data-src="7.jpg">
-	<img class="lazy" data-src="8.jpg">
 	
 </body>
 </html>
