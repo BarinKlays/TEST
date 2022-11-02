@@ -11,51 +11,8 @@
 	<img src="2.jpg">
 	<img src="3.jpg">
 	<img src="4.jpg">
-	<img src="5.jpg">
-	<img src="6.jpg">
-	<img src="7.jpg">
-	<img src="8.jpg">
-	
-	<img class="lazy" data-src="1.jpg">
-	<img class="lazy" data-src="2.jpg">
-	<img class="lazy" data-src="3.jpg">
-	<img class="lazy" data-src="4.jpg">
-	<img class="lazy" data-src="5.jpg">
-	<img class="lazy" data-src="6.jpg">
-	<img class="lazy" data-src="7.jpg">
-	<img class="lazy" data-src="8.jpg">
-	
-		<script type="text/javascript">
-		document.addEventListener("DOMContentLoaded", function() {
-  var lazyloadImages = document.querySelectorAll("img.lazy");    
-  var lazyloadThrottleTimeout;
-  
-  function lazyload () {
-    if(lazyloadThrottleTimeout) {
-      clearTimeout(lazyloadThrottleTimeout);
-    }    
-    
-    lazyloadThrottleTimeout = setTimeout(function() {
-        var scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
-            }
-        });
-        if(lazyloadImages.length == 0) { 
-          document.removeEventListener("scroll", lazyload);
-          window.removeEventListener("resize", lazyload);
-          window.removeEventListener("orientationChange", lazyload);
-        }
-    }, 20);
-  }
-  
-  document.addEventListener("scroll", lazyload);
-  window.addEventListener("resize", lazyload);
-  window.addEventListener("orientationChange", lazyload);
-});
-	</script>
+
+  <a target="_blank" href="https://icons8.com/icon/98970/телеграмма-app">Телеграмма App icon by Icons8</a>
 	
 </body>
 </html>
